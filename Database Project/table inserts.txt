@@ -1,0 +1,114 @@
+insert into people
+values (1 , 'Brian' , 'Canoni' , 'Bcanoni@gmail.com' , 20),
+(2 , 'Riley' , 'Hansen' , 'test1@email.com' , 19),
+(3 , 'Bill' , 'Smith' , 'BSmith@email.com' , 34),
+(4 , 'Jeff' , 'Green' , 'JGreen@aol.com' , 28),
+(5 , 'Will' , 'Nelson' , 'WillN@comcast.net' , 21),
+(6 , 'Michelle' , 'Crowe' , 'Mdot@gmail.com' , 20),
+(7 , 'Raleighe' , 'Orszulak' , 'RalOrs@hotmail.com' , 22),
+(8 , 'Ian' , 'Knapp' , 'IKnapp1@brown.edu' , 20),
+(9 , 'Khangnhi' , 'Nguyen' , 'Knghi@yahoo.com' , 23),
+(10 , 'Fred' , 'Horne' , 'YDominguez@yahoo.com' , 65),
+(11 , 'Kristian' , 'Saysack' , 'Ksay@email.com' , 21),
+(12 , 'Clark' , 'Kent' , 'superman@gmail.com' , 31),
+(13 , 'Jessica' , 'Erikson' , 'Jeri@test.com' , 26),
+(14 , 'John' , 'Benner' , 'nojh@gmail.com' , 21),
+(15 , 'Michael' , 'Peters' , 'MikePeters1@marist.edu' , 18);
+
+insert into customer
+values (1, '20 Bayberry Circle Windsor Ct', 06095, '8607162181', 'Rpg' , 'Debit Card xxxx'),
+(3, '10 Main Street Pogukeepsie NY', 12601, '8605554211', 'Strategy' , 'Credit Card xxxx'),
+(4, '11 Test Street Boston Ma', 13944 , '6318870504', 'Puzzle' , 'Debit Card 1234'),
+(5, '4 Grove Street Albany NY', 12691, '4542118181', 'None' , 'Gift Card xxxx'),
+(7, '55 Broad St Miami FL', 22313, '2034543321', 'Shooter' , 'Debit Card xxxx'),
+(9, '20 Brayburry Circle Windsor MA', 33333, '123333223', 'None' , 'Credit Card xxxx'),
+(10, '40 Juniper Lane Springfield MA', 45321, '9554564343', 'Sim' , 'Debit Card xxxx'),
+(11, '42 Street Street Manchester Ct', 12442, '7943223232', 'Music' , 'Debit Card xxxx'),
+(13, '36 Percy Ave Town NJ', 32132, '6434411123', 'Arcade' , 'Gift Card xxxx'),
+(14, '2 Valley View San Fransisco CA', 06022, '1182295697', 'Platformer' , 'Credit Card xxxx'),
+(15, '1021 South Sunken Meadow North Eastham MA', 12213 , '9049049004', 'Rpg' , 'Credit Card xxxx');
+
+insert into employees
+values (2, 88000),
+(6, 54544),
+(8, 70000),
+(12, 60000);
+
+insert into GameCompany
+values (1 , 'Valve'),
+(2 , 'Ubisoft'),
+(3 , 'Namco Bandai'),
+(4 , 'Gereric Game Company');
+
+
+insert into gametype
+values (1, 'Puzzle'),
+(2 , 'Rpg'),
+(3 , 'Shooter'),
+(4 , 'Sim'),
+(5 , 'Platformer'),
+(6 , 'Arcade');
+
+
+insert into games 
+values (1 , 1 , 'Portal 2' , 1 , '2013-01-13 22:13:00', 50, 'T'),
+(2 , 2 , 'Rayman Legends', 5 , '2013-08-15 08:13:00', 50, 'E'),
+(3 , 4 , 'Ninjas 4' , 2 , '2013-02-25 01:13:00', 50, 'M'),
+(4 , 3 , 'Space Invaders' , 1 , '1981-02-14 23:13:00', 50, 'E'),
+(5 , 3 , 'Pong' , 6 , '1979-11-14 :13:00', 5, 'E'),
+(6 , 4 , 'Dark Souls 2' , 2 , '2014-04-24 17:00:00', 50, 'T'),
+(7 , 2 , 'The Sims 3' , 4 , '2013-01-13 22:13:00', 60, 'T'),
+(8 , 1 , 'Bioshock 2' , 3 , '2009-07-01 22:13:00', 55, 'T'),
+(9 , 1 , 'Dayz' , 3 , '2014-03-23 12:23:00', 30, 'T'),
+(10 , 2 , 'Paper Boy 2' , 6 , '1986-11-03 14:13:00', 25, 'E'),
+(11 , 4 , 'Puzzle dude' , 1 , '2010-01-13 20:03:00', 20, 'E');
+
+insert into softwareCompany
+values (1 , 'Microsoft'),
+(2 , 'Adobe'),
+(3 , 'Sony');
+
+insert into software
+values (1 , 1 , 'Microsoft Office 2014', '2014-04-24 17:00:00' , 160),
+(2 , 2 , 'Adobe Photoshop', '2010-10-01 14:00:00' , 280),
+(3 , 3 , 'Sony Vegas', '2013-08-08 17:00:00' , 200);
+
+insert into gameorders
+values (1, 6 , '2014-04-24 17:00:01' , 55),
+(1, 1 , '2014-04-24 17:00:01' , 46),
+(3, 11 , '2014-04-24 17:00:01' , 30),
+(4, 1 , '2014-03-20 17:00:01' , 39),
+(4, 2 , '2014-01-13 16:00:01' , 5),
+(4, 7 ,' 2014-09-24 15:00:01' , 70),
+(5, 8 , '2014-11-24 09:00:01' , 54),
+(7, 6 , '2014-07-16 22:00:01' , 44),
+(7, 7 , '2014-12-14 21:00:01' , 50),
+(7, 8 , '2014-06-13 23:00:01' , 32),
+(7, 9 , '2014-03-13 24:00:00' , 16),
+(7, 2 , '2014-02-22 01:00:01' , 11),
+(9, 1 , '2014-01-11 02:00:01' , 45),
+(10, 10 , '2014-02-24 17:00:01' , 55),
+(11, 9 , '2014-05-21 17:00:01' , 50),
+(11, 3 , '2014-06-22 03:00:01' , 13),
+(15, 4 , '2014-06-11 05:00:01' , 22),
+(15, 5 , '2014-07-21 12:00:01' , 4);
+
+insert into softwareorders
+values (3, 1, '2014-07-21 12:00:01', 170),
+(3, 2, '2014-05-21 17:00:01' ,281),
+(9, 3 ,'2014-03-20 17:00:01', 180),
+(11, 1 ,'2014-06-13 23:00:01', 154),
+(15, 2 ,'2014-05-21 17:00:01', 174);
+
+
+
+
+
+
+
+
+
+
+
+
+

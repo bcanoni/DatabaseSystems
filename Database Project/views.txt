@@ -1,0 +1,11 @@
+create view GamesList
+(GameName, Publisher, Type, DateReleased, OriginalPrice, ESRB) AS
+select g.gameName, gc.gcname , gt.type , g.datereleased, g.originalprice, g.esrb
+from games g, gamecompany gc, gametype gt
+where g.gcid = gc.gcid and gt.typeid = g.typeid;
+
+create view SoftwareList
+(SoftwareName, Publisher,  DateReleased, OriginalPrice) AS
+select s.softwareName, sc.scname ,s.datereleased,s.originalprice
+from software s, softwarecompany sc
+where s.scid = sc.scid;

@@ -1,0 +1,93 @@
+CREATE TABLE if not exists people 
+(  
+pid serial NOT NULL,
+fname text NOT NULL,
+lname text NOT NULL,  
+email text NOT NULL,  
+age integer NOT NULL,  
+CONSTRAINT people_pkey PRIMARY KEY (pid),  
+CONSTRAINT people_email_key UNIQUE (email)
+);
+
+Create table if not exists Customer 
+(
+pid serial not null references people(pid) primary key,
+Streetaddress text not null,
+zipcode int not null,
+phone text not null ,
+favoritetype text,
+paymentinfo text not null
+);
+
+Create table if not exists Employees 
+(
+pid serial not null references people(pid) primary key,
+WageUSD money not null
+);
+
+
+Create table if not exists GameCompany
+(
+gcid serial not null primary key,
+gcname text,
+gclocation text
+);
+
+
+Create table if not exists SoftwareCompany
+(
+scid serial not null primary key,
+scname text,
+sclocation text
+);
+
+create table if not exists Gametype
+(
+TypeID serial primary key,
+type text
+);
+
+
+Create table if not exists Games 
+(
+gid serial not null primary key,
+gcid serial not null references gamecompany(gcid),
+gamename text not null,
+typeid serial not null references gametype(typeid),
+datereleased date not null,
+originalprice money not null,
+esrb text
+);
+
+
+
+Create table if not exists Software 
+(
+Sid serial not null primary key,
+scid serial not null references gamecompany(gcid),
+softwarename text not null,
+datereleased date not null,
+originalprice money not null
+);
+
+
+Create table if not exists GameOrders 
+(
+pid serial not null references customer(pid),
+gid serial not null references games(gid),
+OrdDate DATE not null,
+AmountPaid money not null,
+primary key (pid,gid)
+);
+
+
+Create table if not exists SoftwareOrders 
+(
+pid serial not null references customer(pid),
+sid serial not null references software(sid),
+OrdDate DATE not null,
+AmountPaid money not null,
+primary key (pid,sid)
+);
+
+
